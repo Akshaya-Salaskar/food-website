@@ -3,14 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: yellow;
+
 }
 
 
 /* css variables */
 
 :root{
-    --navbar-height: 59px;
+    --navbar-height: 47px;
 }
 
 
@@ -32,7 +32,7 @@ margin: 5px 5px;
 
 
 #navbar{
-    position: relative;
+    position: absolute;
     display: flex;
     }
 
@@ -46,6 +46,8 @@ margin: 5px 5px;
     height: 100%;
     width: 100%;
     position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -77,17 +79,19 @@ list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 633px;
+    height: 675px;
     align-items: center;
     padding: 3px 200px;
+
 }
 
 #home::before{
     content: "";
     background: url('img/bg.jpg') no-repeat center center/cover;
-    height: 100%;
+    height: 61%;
     width: 100%;
     position: absolute;
+    
     z-index: -1;
     opacity: 0.89;
 }
@@ -100,7 +104,7 @@ list-style: none;
 #home p{
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -110,17 +114,102 @@ list-style: none;
 #services{
     display: flex;
             margin: 34px;
+      
           
 }
 
 #services .box{
-    border: 2px solid white;
+    border: 4px solid rgb(16, 242, 5);
+padding: 20px;
+margin: 0px 10px 10px 10px;
+border-radius: 24px;
+background-color: rgb(233, 217, 217);
 }
 
 #services .box img{
     height: 160px;
     margin: auto;
     display: block;
+}
+
+/* Client Section  */
+
+#client-section{
+  position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/clients.jpg') no-repeat center center/cover ;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+   height: 150px;
+}
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+ 
+}
+
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('img/contact\ us.jpg') no-repeat center center/cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 20px;
 }
 
 
@@ -130,11 +219,14 @@ list-style: none;
     font-size: 3.8rem;
     padding: 12px;
     font-family: sans-serif;
+  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .h-secondary{
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     padding: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .btn{
