@@ -69,7 +69,8 @@ flex-wrap: wrap;
 
 #clients img{
  
- 
+    margin-top: 0px;
+ flex-wrap: wrap;
     }
 
 
